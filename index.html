@@ -1,15 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Be Right Back</title>
-   <link rel="stylesheet" href="styles.css">
-   <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
-</head>
-<body>
-    <div class="square">
-        <h1>BRB :)</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Warren — Graphic Designer</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">✲WF</a>
+      <nav>
+        <a href="about.html">About</a>
+        <a href="index.html">Work</a>
+      </nav>
+      <div class="date-container" id="date-time"></div>
+    </header>
+
+    <div class="line"></div>
+
+    <div class="description-section">
+      <div class="social-links">
+        <!-- Behance -->
+        <a
+          href="https://www.behance.net/warflew"
+          target="_blank"
+          aria-label="Behance"
+        >
+          <?xml version="1.0"?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+          <svg
+            height="100%"
+            style="
+              fill-rule: evenodd;
+              clip-rule: evenodd;
+              stroke-linejoin: round;
+              stroke-miterlimit: 2;
+            "
+            version="1.1"
+            viewBox="0 0 512 512"
+            width="100%"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:serif="http://www.serif.com/"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <path
+              d="M256,0c141.29,0 256,114.71 256,256c0,141.29 -114.71,256 -256,256c-141.29,0 -256,-114.71 -256,-256c0,-141.29 114.71,-256 256,-256Zm174.73,309.405c0.803,-12.096 -0.183,-23.644 -2.983,-34.703c-2.825,-11.076 -7.356,-20.951 -13.702,-29.583c-6.354,-8.649 -14.448,-15.558 -24.306,-20.661c-9.908,-5.17 -21.448,-7.705 -34.637,-7.705c-11.946,0 -22.732,2.121 -32.516,6.338c-9.775,4.241 -18.167,10.04 -25.25,17.388c-7.067,7.307 -12.451,16.022 -16.328,26.121c-3.811,10.065 -5.758,20.951 -5.758,32.607c0,12.053 1.872,23.179 5.592,33.228c3.761,10.099 9.038,18.698 15.831,25.971c6.976,7.249 15.26,12.8 25.176,16.768c9.925,3.91 20.976,5.898 33.253,5.898c17.621,0 32.732,-4.034 45.133,-12.128c12.551,-8.069 21.738,-21.465 27.802,-40.229l-37.71,0c-1.458,4.822 -5.236,9.469 -11.44,13.819c-6.263,4.357 -13.719,6.536 -22.351,6.536c-12.013,0 -21.283,-3.148 -27.703,-9.411c-6.429,-6.263 -10.587,-17.927 -10.587,-30.254l112.484,0Zm-245.398,67.633c9.661,0 19.079,-1.218 28.15,-3.621c9.179,-2.41 17.356,-6.122 24.489,-11.167c7.075,-5.004 12.816,-11.49 17.032,-19.493c4.184,-7.911 6.271,-17.306 6.271,-28.224c0,-13.471 -3.206,-24.953 -9.742,-34.554c-6.503,-9.535 -16.328,-16.237 -29.558,-20.048c9.717,-4.606 16.999,-10.529 21.953,-17.753c4.929,-7.241 7.381,-16.296 7.381,-27.131c0,-10.016 -1.648,-18.491 -4.92,-25.259c-3.364,-6.868 -8.061,-12.319 -14.059,-16.42c-6.097,-4.1 -13.296,-7.091 -21.746,-8.88c-8.492,-1.848 -17.786,-2.734 -28.084,-2.734l-101.499,0l0,215.284l104.332,0Zm-5.401,-95.949c10.198,0 18.491,2.345 24.72,7.067c6.205,4.78 9.337,12.666 9.337,23.759c0,5.658 -0.92,10.347 -2.834,13.959c-1.905,3.628 -4.539,6.495 -7.704,8.582c-3.181,2.171 -6.934,3.645 -11.175,4.565c-4.176,0.936 -8.616,1.35 -13.28,1.35l-50.601,0l0,-59.282l51.537,0Zm198.102,-23.337c-5.095,-5.625 -13.702,-8.673 -24.215,-8.673c-6.843,0 -12.501,1.151 -17.041,3.495c-4.44,2.32 -8.068,5.195 -10.844,8.591c-2.767,3.447 -4.639,7.092 -5.741,10.985c-1.093,3.794 -1.756,7.232 -1.946,10.273l69.654,0c-1.019,-10.919 -4.755,-18.996 -9.867,-24.671Zm-205.284,-59.324c4.2,0 8.284,0.299 12.194,1.061c3.968,0.687 7.398,1.947 10.43,3.777c3.049,1.765 5.476,4.275 7.307,7.489c1.764,3.215 2.634,7.357 2.634,12.361c0,9.029 -2.634,15.599 -8.085,19.584c-5.509,4.042 -12.468,6.031 -20.86,6.031l-47.975,0l0,-50.303l44.355,0Zm223.998,-0.985l0,-21.241l-87.266,0l0,21.241l87.266,0Z"
+            />
+          </svg>
+        </a>
+        <!-- LinkedIn -->
+        <a
+          href="https://www.linkedin.com/in/warrenflewellen"
+          target="_blank"
+          aria-label="LinkedIn"
+        >
+          <svg viewBox="0 0 512 512">
+            <path
+              d="M256,0c141.29,0 256,114.71 256,256c0,141.29 -114.71,256 -256,256c-141.29,0 -256,-114.71 -256,-256c0,-141.29 114.71,-256 256,-256Zm-80.037,399.871l0,-199.921l-66.464,0l0,199.921l66.464,0Zm239.62,0l0,-114.646c0,-61.409 -32.787,-89.976 -76.509,-89.976c-35.255,0 -51.047,19.389 -59.889,33.007l0,-28.306l-66.447,0c0.881,18.757 0,199.921 0,199.921l66.446,0l0,-111.65c0,-5.976 0.43,-11.95 2.191,-16.221c4.795,-11.935 15.737,-24.299 34.095,-24.299c24.034,0 33.663,18.34 33.663,45.204l0,106.966l66.45,0Zm-272.403,-296.321c-22.74,0 -37.597,14.95 -37.597,34.545c0,19.182 14.405,34.544 36.717,34.544l0.429,0c23.175,0 37.6,-15.362 37.6,-34.544c-0.43,-19.595 -14.424,-34.545 -37.149,-34.545Z"
+            />
+          </svg>
+        </a>
+      </div>
+      <div class="description">
+        <p>
+          Graphic Designer blending creativity and psychology to craft designs
+          that truly connect.
+        </p>
+      </div>
     </div>
-</body>
+
+    <div class="line"></div>
+
+    <main>
+      <div class="project-container">
+        <div class="project">
+          <a href="project.html">
+            <img src="images/projects/verde-solar/Hero.png" alt="Project 1" />
+          </a>
+          <div class="project-info">
+            <div class="project-title">Verde Solar</div>
+            <div class="project-desc">
+              A branding project for a renewable energy company with a focus on
+              clarity and sustainability.
+            </div>
+          </div>
+        </div>
+        <div class="line"></div>
+
+        <div class="project">
+          <a href="#"
+            ><img src="images/projects/dusk/dusk-hero.png" alt="Project 2."
+          /></a>
+          <div class="project-info">
+            <div class="project-title">Dusk</div>
+            <div class="project-desc">
+              A campaign showcasing lifestyle lamps that blend function, mood,
+              and modern style for design-conscious homes.
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>Warren Flewellen © <span id="year"></span></footer>
+    <script src="js/main.js"></script>
+  </body>
 </html>

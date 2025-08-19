@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verde Solar - Warren — Graphic Designer</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">✲WF</a>
+      <nav>
+        <a href="about.html">About</a>
+        <a href="index.html">Work</a>
+      </nav>
+      <div class="date-container" id="date-time"></div>
+    </header>
+
+    <div class="line"></div>
+
+    <main>
+      <section class="hero-image">
+        <img src="/images/projects/verde-solar/Hero.png" alt="Project Hero" />
+      </section>
+
+      <section class="project-intro">
+        <div class="project-title">Verde Solar</div>
+        <div class="project-meta">
+          <p><strong>Project Type:</strong> Branding</p>
+          <p><strong>Role:</strong> Graphic Designer</p>
+          <p><strong>Year:</strong> 2025</p>
+        </div>
+      </section>
+
+      <section class="project-columns">
+        <div class="project-row">
+          <div class="project-section">
+            <h2>Overview</h2>
+            <p>
+              A conceptual rebrand for Verde Solar, a new player in the
+              renewable energy sector. The company specializes in high-grade
+              solar panels and needed an identity that felt bold, modern, and
+              trustworthy. This project explores how visual branding can help a
+              fresh face cut through a saturated market.
+            </p>
+
+            <h2>Challenge</h2>
+            <p>
+              Verde Solar wanted to establish itself as the bold new kid on the
+              block in an industry dominated by traditional, established brands.
+            </p>
+            <br />
+            The company needed to communicate:
+            <ul>
+              <li>Approachability and transparency</li>
+              <li>A forward-thinking mission</li>
+              <li>A clean, professional look</li>
+              <li>Broad appeal to consumers and businesses</li>
+            </ul>
+
+            <h2>Solution</h2>
+            <p>
+              A brand identity system that reflects optimism, innovation, and
+              sustainability.
+            </p>
+            <br />
+            Built through:
+            <ul>
+              <li>Bold typography</li>
+              <li>Vibrant color palette</li>
+              <li>
+                Custom logo that balances solar symbolism with modern design
+              </li>
+              <li>
+                Applications that reinforce a consistent, human-centered voice
+              </li>
+            </ul>
+
+            <h2>Deliverables</h2>
+            <p>
+              The Verde Solar brand system was applied across a range of digital
+              and print materials to ensure consistency and impact. Each
+              application reinforces the brand's clean, modern aesthetic while
+              adapting to different formats and use cases.
+            </p>
+          </div>
+          <div class="project-image">
+            <img
+              src="images/projects/verde-solar/brochure/Brochure1.webp"
+              alt="Overview Image"
+            />
+            <div class="additional-images">
+              <img
+                src="images/projects/verde-solar/brochure/Brochure2.webp"
+                alt="Additional Image 1"
+              />
+              <img
+                src="images/projects/verde-solar/brochure/Brochure3.webp"
+                alt="Additional Image 2"
+              />
+              <img
+                src="images/projects/verde-solar/brochure/Brochure4.webp"
+                alt="Additional Image 3"
+              />
+            </div>
+
+            <img
+              src="images/projects/verde-solar/social-media/IG-Mockup-2.png"
+              alt="Challenges Image"
+            />
+            <div class="additional-images">
+              <img
+                src="images/projects/verde-solar/social-media/IG-1.png"
+                alt="Additional Image 1"
+              />
+              <img
+                src="images/projects/verde-solar/social-media/IG-2.png"
+                alt="Additional Image 2"
+              />
+              <img
+                src="images/projects/verde-solar/social-media/IG-3.png"
+                alt="Additional Image 3"
+              />
+              <img
+                src="images/projects/verde-solar/social-media/IG-4.png"
+                alt="Additional Image 4"
+              />
+            </div>
+
+            <img
+              src="images/projects/verde-solar/business-card/Business_Card_Final.png"
+              alt="Solutions Image"
+            />
+            <div class="additional-images">
+              <img
+                src="images/projects/verde-solar/business-card/Business_Card1.png"
+                alt="Additional Image 2"
+              />
+              <img
+                src="images/projects/verde-solar/business-card/Business_Card2.png"
+                alt="Additional Image 3"
+              />
+            </div>
+
+            <img
+              src="images/projects/verde-solar/additional/Website_1.png"
+              alt="Outcome Image"
+            />
+            <div class="additional-images">
+              <img
+                src="images/projects/verde-solar/additional/Website_2.png"
+                alt="Additional Image 1"
+              />
+              <img
+                src="images/projects/verde-solar/additional/Truck.png"
+                alt="Additional Image 2"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project Navigation Arrows -->
+      <div class="project-nav">
+        <button id="prev-project" onclick="window.history.back();">
+          &#8592;
+        </button>
+        <button id="next-project" onclick="window.history.forward();">
+          &#8594;
+        </button>
+      </div>
+    </main>
+
+    <footer>Warren Flewellen © <span id="year"></span></footer>
+
+    <!-- Lightbox markup -->
+    <div id="lightbox" style="display: none">
+      <div id="lightbox-overlay"></div>
+      <div id="lightbox-content">
+        <button id="lightbox-close" aria-label="Close">&times;</button>
+        <button id="lightbox-prev" aria-label="Previous">&#8592;</button>
+        <img id="lightbox-img" src="" alt="Lightbox Image" />
+        <button id="lightbox-next" aria-label="Next">&#8594;</button>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
