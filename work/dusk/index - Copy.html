@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dusk - Warren — Graphic Designer</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/swiper.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body>
+    <header>
+      <a href="/" class="logo"
+        ><img src="/images/about/Logo.png" alt="Warren's Logo"
+      /></a>
+      <nav>
+        <a href="/">Work</a>
+        <a href="/about">About</a>
+      </nav>
+      <div class="date-container" id="date-time"></div>
+    </header>
+
+    <div class="line"></div>
+
+    <main>
+      <section class="hero-image">
+        <img src="/images/projects/dusk/dusk-hero.png" alt="Project Hero" />
+      </section>
+
+      <section class="project-intro">
+        <div class="project-title">Dusk</div>
+        <div class="project-meta">
+          <p><strong>Project Type:</strong> Advertising</p>
+          <p><strong>Role:</strong> Graphic Designer</p>
+          <p><strong>Year:</strong> 2025</p>
+        </div>
+      </section>
+
+      <section class="project-columns">
+        <div class="project-row">
+          <div class="project-section">
+            <h2>Overview</h2>
+            <p>
+              DUSK is a lifestyle lamp designed to support mental wellness at
+              home, complementing therapy and medication for those with anxiety
+              or depression.
+            </p>
+
+            <h2>Challenge</h2>
+            <p>
+              Position the product as calming, trustworthy, and stylish while
+              standing out in the home lighting market.
+            </p>
+
+            <h2>Solution</h2>
+            <p>
+              A cohesive advertising campaign with Instagram and transit ads
+              plus a packaging mockup, balancing emotional warmth with modern
+              design.
+            </p>
+
+            <h2>Deliverables</h2>
+            <p>
+              Digital, out-of-home, and packaging visuals showcasing DUSK as a
+              wellness-focused lifestyle product.
+            </p>
+          </div>
+          <div class="project-image">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="/images/projects/dusk/social-media/IG-Mockup.png"
+                    alt="Overview Image"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="/images/projects/dusk/social-media/Ad-1.png"
+                    alt="Additional Image 1"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="/images/projects/dusk/social-media/Ad-2.png"
+                    alt="Additional Image 2"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="/images/projects/dusk/social-media/Ad-3.png"
+                    alt="Additional Image 3"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="/images/projects/dusk/social-media/Ad-4.png"
+                    alt="Additional Image 4"
+                  />
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <img
+              src="/images/projects/dusk/packaging/Dusk-Packaging1.png"
+              alt="Challenges Image"
+            />
+            <img
+              src="/images/projects/dusk/packaging/Dusk-Packaging2.png"
+              alt="Challenges Image"
+              class="spaced-img"
+            />
+
+            <img
+              src="/images/projects/dusk/transit/Transit-Ad-Mockup1.png"
+              alt="Solutions Image"
+            />
+            <img
+              src="/images/projects/dusk/transit/Transit-Ad-Mockup2.png"
+              alt="Solutions Image"
+            />
+            <div class="additional-images">
+              <img
+                src="/images/projects/dusk/transit/Transit-Ad1.png"
+                alt="Additional Image 2"
+              />
+              <img
+                src="/images/projects/dusk/transit/Transit-Ad2.png"
+                alt="Additional Image 3"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project Navigation Arrows -->
+      <div class="project-nav">
+        <a
+          href="/work/verde-solar/index.html"
+          id="prev-project"
+          class="project-nav-link"
+          onclick="setTimeout(function(){window.scrollTo(0,0);}, 10);"
+        >
+          <button>&#8592;</button>
+        </a>
+        <button id="next-project" onclick="window.history.forward();">
+          &#8594;
+        </button>
+      </div>
+    </main>
+
+    <footer>Warren Flewellen © <span id="year"></span></footer>
+
+    <!-- Lightbox markup -->
+    <div id="lightbox" style="display: none">
+      <div id="lightbox-overlay"></div>
+      <div id="lightbox-content">
+        <button id="lightbox-close" aria-label="Close">&times;</button>
+        <button id="lightbox-prev" aria-label="Previous">&#8592;</button>
+        <img id="lightbox-img" src="" alt="Lightbox Image" />
+        <button id="lightbox-next" aria-label="Next">&#8594;</button>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper", {
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        slidesPerView: 1,
+        spaceBetween: 16,
+      });
+    </script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
