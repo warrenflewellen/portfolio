@@ -1,5 +1,3 @@
-/* INDEX JS */
-
 // =========================
 // DATE & TIME FUNCTIONALITY
 // =========================
@@ -318,5 +316,3 @@ function updateDateTime() {
     yearEl.textContent = year;
   }
 }
-updateDateTime();
-setInterval(updateDateTime, 1000);
