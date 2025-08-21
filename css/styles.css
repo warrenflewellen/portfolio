@@ -1,3 +1,4 @@
+@import url("https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css");
 @media (min-width: 1024px) {
   .project-intro {
     margin-left: auto !important;
@@ -304,10 +305,10 @@ footer {
 
 .project-image img {
   width: 100%;
-  max-width: 600px;
   height: auto;
-  max-height: 600px;
-  object-fit: cover;
+  max-width: 600px;
+  max-height: none;
+  object-fit: unset;
   border: none;
   cursor: pointer;
   transition: opacity 0.3s ease, transform 0.3s ease;
@@ -630,52 +631,9 @@ footer {
   opacity: 0.8;
   transition: opacity 0.2s;
 }
-
 #lightbox-prev:hover,
-#lightbox-next:hover,
-#lightbox-close:hover {
+#lightbox-next:hover {
   opacity: 1;
-}
-
-/* Mobile lightbox adjustments */
-@media (max-width: 768px) {
-  #lightbox-content {
-    width: 95%;
-    padding: 0 10px;
-  }
-
-  #lightbox-img {
-    max-width: 70vw;
-    max-height: 70vh;
-  }
-
-  #lightbox-prev,
-  #lightbox-next {
-    position: absolute;
-    margin: 0;
-    font-size: 1.5rem;
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  #lightbox-prev {
-    left: 10px;
-  }
-
-  #lightbox-next {
-    right: 10px;
-  }
-
-  #lightbox-close {
-    top: -30px;
-    right: 10px;
-    font-size: 1.5rem;
-  }
 }
 
 /* =========================
