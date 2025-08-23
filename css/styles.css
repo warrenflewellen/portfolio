@@ -222,7 +222,6 @@ footer {
   font-family: inherit;
 }
 
-
 @media (min-width: 1024px) {
   .project-intro .project-title {
     font-size: 3.5em;
@@ -232,7 +231,9 @@ footer {
     margin: 0;
     padding: 0 16px 0 0;
   }
-}
+  .project-info .project-title {
+    font-weight: 500;
+  }
 }
 
 .project-meta {
@@ -288,8 +289,6 @@ footer {
   color: #444;
   font-family: inherit;
 }
-
-
 
 .project-section h2 {
   margin: 40px 0 10px 0; /* Add consistent top margin for spacing */
@@ -819,7 +818,6 @@ li {
   }
   .project-title {
     font-size: 1.8em;
-    font-weight: bold;
   }
 }
 
@@ -866,6 +864,10 @@ li {
 @media (max-width: 768px) {
   .hero-image {
     margin-top: 15px;
+  }
+  .project-info > .project-title,
+  .project-intro > .project-title {
+    font-weight: 600;
   }
 
   .hero-image img {
