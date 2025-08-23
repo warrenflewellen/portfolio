@@ -496,7 +496,7 @@ footer {
 
 @media (min-width: 769px) {
   .project-desc {
-    max-width: 200px; /* Limit width to 150px for tighter wrapping */
+    max-width: 400px; /* Limit width to 150px for tighter wrapping */
     word-wrap: break-word;
     overflow-wrap: break-word;
   }
