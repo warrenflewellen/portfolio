@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Söhne Buch";
+  src: url("/fonts/Söhne/TestSöhne-Buch.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 @import url("https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css");
 @media (min-width: 1024px) {
   .project-intro {
@@ -16,8 +22,6 @@
   .project-intro .project-title {
     margin: 0;
     padding: 0 16px 0 0;
-    font-size: 2em;
-    font-weight: bold;
     white-space: nowrap;
     display: inline-block;
   }
@@ -60,6 +64,13 @@
   font-weight: 400;
   font-style: normal;
 }
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("/fonts/PPNeueMontreal-Light.woff2") format("woff2"),
+    url("/fonts/PPNeueMontreal-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
 
 /* =========================
    GLOBAL STYLES
@@ -69,9 +80,9 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: "Neue Montreal", "Helvetica Neue", Arial, "Liberation Sans",
-    "Grotesk", sans-serif;
-  font-size: 13px;
+  font-family: "Neue Montreal", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
   background: #f8f9fa; /* Light offwhite background */
   color: #444; /* Semi gray text color */
   overflow-x: hidden;
@@ -211,12 +222,17 @@ footer {
   font-family: inherit;
 }
 
-.project-title {
-  font-size: 13px;
-  font-weight: normal;
-  margin-bottom: 10px;
-  font-family: inherit;
-  line-height: 1.1;
+
+@media (min-width: 1024px) {
+  .project-intro .project-title {
+    font-size: 3.5em;
+    font-weight: 500;
+    white-space: nowrap;
+    display: inline-block;
+    margin: 0;
+    padding: 0 16px 0 0;
+  }
+}
 }
 
 .project-meta {
@@ -273,10 +289,14 @@ footer {
   font-family: inherit;
 }
 
+
+
 .project-section h2 {
   margin: 40px 0 10px 0; /* Add consistent top margin for spacing */
   padding: 0;
   font-family: inherit;
+  font-size: 1.5em;
+  font-weight: 700;
 }
 
 .project-section h2:first-of-type {
@@ -462,22 +482,21 @@ footer {
 }
 
 .project-title {
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 3em;
   margin-bottom: 10px;
   font-family: inherit;
   line-height: 1.1;
 }
 
 .project-desc {
-  font-size: 12px;
+  font-size: 13px;
   margin: 0;
   font-family: inherit;
 }
 
 @media (min-width: 769px) {
   .project-desc {
-    max-width: 180px; /* Limit width to 150px for tighter wrapping */
+    max-width: 200px; /* Limit width to 150px for tighter wrapping */
     word-wrap: break-word;
     overflow-wrap: break-word;
   }
@@ -799,7 +818,8 @@ li {
     max-width: 300px;
   }
   .project-title {
-    font-weight: 500;
+    font-size: 1.8em;
+    font-weight: bold;
   }
 }
 
