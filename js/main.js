@@ -68,11 +68,14 @@ function updateDateTime() {
   const day = String(now.getDate()).padStart(2, "0");
   const year = now.getFullYear();
   const date = `${month}.${day}.${year}`;
-  const time = now.toLocaleTimeString([], {
+  // Get user's local time zone abbreviation
+  const timeOptions = {
     hour: "2-digit",
     minute: "2-digit",
     second: "2-digit",
-  });
+    timeZoneName: "short",
+  };
+  const time = now.toLocaleTimeString([], timeOptions);
   const dateTimeEl = document.getElementById("date-time");
   if (dateTimeEl) {
     dateTimeEl.innerHTML = `<span style=\"color:#888;\">${date}</span> | ${time}`;
