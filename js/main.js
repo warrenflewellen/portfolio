@@ -68,12 +68,11 @@ function updateDateTime() {
   const day = String(now.getDate()).padStart(2, "0");
   const year = now.getFullYear();
   const date = `${month}.${day}.${year}`;
-  // Get user's local time zone abbreviation
+  // Format time without time zone abbreviation
   const timeOptions = {
     hour: "2-digit",
     minute: "2-digit",
-    second: "2-digit",
-    timeZoneName: "short",
+    second: "2-digit"
   };
   const time = now.toLocaleTimeString([], timeOptions);
   const dateTimeEl = document.getElementById("date-time");
